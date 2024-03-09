@@ -1,0 +1,25 @@
+.card {
+  border: none;
+  background: none;
+}
+.card-footer {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.btn-dark {
+  border-radius: 0;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: 200;
+}
+.card-body {
+  padding-left: 0;
+}
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+.card-img-top:hover{
+    transform: scale(1.05);
+}

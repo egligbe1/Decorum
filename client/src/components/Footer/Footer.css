@@ -1,0 +1,15 @@
+.card {
+    background: none;
+}
+.card-title {
+    font-size: 19px;
+}
+a {
+    color: var(--text-color);
+}
+.flag-text {
+    font-size: 14px;
+}
+.copyright {
+    font-size: 16px;
+}

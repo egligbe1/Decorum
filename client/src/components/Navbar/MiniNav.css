@@ -1,0 +1,4 @@
+.nl a.active {
+  /* Your styles for the active NavLink */
+  color: red; /* For example, set the color to red */
+}
