@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutPage from "./pages/About/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import MiniNav from "./components/Navbar/MiniNav";
-import Navbar from "./components/Navbar/Navbar";
+import Nav from "./components/Navbar/Nav";
 import NewsletterModal from "./components/Modals/NewsletterModal";
 import Sidebar from "./components/Sidebar/Sidebar";
+import PromotionsPage from "./pages/PromotionsPage/PromotionsPage";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -33,11 +33,11 @@ function App() {
       {showModal && (
         <NewsletterModal openModal={openModal} closeModal={closeModal} />
       )}
-      <MiniNav />
-      <Navbar openModal={openModal} openSidebar={openSidebar} />
+      <Nav openModal={openModal} openSidebar={openSidebar} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/pages/current-promotions" element={<PromotionsPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </Router>

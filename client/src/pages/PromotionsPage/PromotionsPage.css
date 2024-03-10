@@ -1,0 +1,35 @@
+.promotions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+}
+.promoImg img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 600px;   
+}
+.promo-banner-container {
+    width: 100%;
+    margin: 40px 0;
+  }
+  
+.promo-banner {
+    object-fit: cover;
+}
+.promo-body p {
+    font-weight: 300;
+    font-size: 17px;
+}
+.cta-offer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+@media  screen and (max-width:600px) {
+    .promotions {
+        grid-template-columns: 1fr;
+    }
+}
+    

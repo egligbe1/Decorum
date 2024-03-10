@@ -28,3 +28,14 @@
     color: #ffffff;
     cursor: pointer;
   }
+  .sidebar-menu-items li {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .sidebar-menu-items li :hover {
+    color: rgb(160, 164, 167);
+  }
+  .pipe {
+    opacity: 0.4;
+  }
