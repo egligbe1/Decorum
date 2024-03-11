@@ -9,7 +9,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import StresslessImg from "../../assets/images/Stressless.avif";
 import Logo from "../../assets/images/DECORUMM.png";
 
-const Navbar = ({ openModal, openSidebar }) => {
+const Navbar = ({ openModal, openSidebar, openCartSidebar }) => {
   const [selectedCurrency, setSelectedCurrency] = useState("");
 
   const handleCurrencyChange = (event) => {
@@ -84,10 +84,12 @@ const Navbar = ({ openModal, openSidebar }) => {
                 <TfiSearch size={23} />{" "}
               </NavLink>
             </span>{" "}
-            <span>
-              <NavLink to="/cart" className="text-secondary">
-                <MdOutlineShoppingBag size={25} />{" "}
-              </NavLink>
+            <span
+              className="text-secondary"
+              onClick={openCartSidebar}
+              style={{ cursor: "pointer" }}
+            >
+              <MdOutlineShoppingBag size={25} />{" "}
             </span>
           </div>
         </div>

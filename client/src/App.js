@@ -8,10 +8,12 @@ import Nav from "./components/Navbar/Nav";
 import NewsletterModal from "./components/Modals/NewsletterModal";
 import Sidebar from "./components/Sidebar/Sidebar";
 import PromotionsPage from "./pages/PromotionsPage/PromotionsPage";
+import CartSidebar from "./components/CartSidebar/CartSidebar";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
+  const [showCartSidebar, setCartSidebar] = useState(false);
 
   const openModal = () => {
     setShowModal(true);
@@ -26,14 +28,21 @@ function App() {
   const closeSidebar = () => {
     setShowSidebar(false);
   };
+  const openCartSidebar = () => {
+    setCartSidebar(true);
+  };
+  const closeCartSidebar = () => {
+    setCartSidebar(false);
+  };
 
   return (
     <Router>
+      {showCartSidebar && <CartSidebar openCartSidebar= {openCartSidebar} closeCartSidebar = {closeCartSidebar}/>}
       {showSidebar && <Sidebar openSidebar={openSidebar} closeSidebar = {closeSidebar}/>}
       {showModal && (
         <NewsletterModal openModal={openModal} closeModal={closeModal} />
       )}
-      <Nav openModal={openModal} openSidebar={openSidebar} />
+      <Nav openModal={openModal} openSidebar={openSidebar} openCartSidebar={openCartSidebar} closeCartSidebar={closeCartSidebar}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
