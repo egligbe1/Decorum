@@ -1,6 +1,6 @@
 # Decorium; A Home Furniture Store Project
 
-This is a clone of Canadian Furniture store 'Decorium.com' website
+This is a clone of the Canadian Furniture store 'Decorium.com' website
 
 ## Installation
 
@@ -31,25 +31,5 @@ Follow these steps to get started;
 2. Bootstrap
 3. React Router
 
-## Folder Structure
-``` bash
-client/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├──...
-│   │   ├── ...
-│   │   └── ...
-│   ├── pages/
-│   │   ├── Home
-│   │   ├──...
-│   │   └── ...
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── ...
-```
 
       
