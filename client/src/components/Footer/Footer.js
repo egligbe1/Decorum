@@ -52,7 +52,12 @@ const Footer = () => {
                 <div className="card-body">
                   <p>363 Supertest Rd , Toronto, Ontario</p>
                   <p>Canada, M3J 2M4</p>
-                  <p style={{fontSize:'15px'}} className="fw-bold text-secondary">Showroom hours:</p>
+                  <p
+                    style={{ fontSize: "15px" }}
+                    className="fw-bold text-secondary"
+                  >
+                    Showroom hours:
+                  </p>
                   <p>Monday - Saturday: 11AM – 6PM</p>
                   <p>Sunday: 12PM – 5PM</p>
                   <img
@@ -124,7 +129,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/* small screen footer */}
         <div className="footer-mobile d-flex flex-column d-md-none">
           <hr />
@@ -154,7 +159,12 @@ const Footer = () => {
                 <div className="card-body">
                   <p>363 Supertest Rd , Toronto, Ontario</p>
                   <p>Canada, M3J 2M4</p>
-                  <p style={{fontSize:'15px'}} className="fw-bold text-secondary">Showroom hours:</p>
+                  <p
+                    style={{ fontSize: "15px" }}
+                    className="fw-bold text-secondary"
+                  >
+                    Showroom hours:
+                  </p>
                   <p>Monday - Saturday: 11AM – 6PM</p>
                   <p>Sunday: 12PM – 5PM</p>
                   <img

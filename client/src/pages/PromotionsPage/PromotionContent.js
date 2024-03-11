@@ -8,7 +8,7 @@ const PromotionContent = () => {
   return (
     <div>
       <div className="container">
-        <div className="promotions d-grid ">
+        <div className="promotions d-grid mt-1 ">
           <div className="promoImg d-flex align-items-center justify-content-start">
             <img className="" src={FurnitureImg} alt="Furniture" />
           </div>

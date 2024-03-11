@@ -16,7 +16,7 @@ const AnnouncementBar = () => {
             Enjoy selection and quality as you enhance and personalize your home
             with 15% off* regular-priced items
           </strong>
-          <p style={{ fontSize: "14px" }} className="text-center text-secondary mb-4">
+          <p style={{ fontSize: "14px" }} className="text-center mb-4">
             Shop floor to ceiling savings all under one roof. Visit our showroom
             for the best selection.
           </p>
