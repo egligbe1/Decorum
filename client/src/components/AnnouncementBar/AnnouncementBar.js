@@ -6,7 +6,7 @@ const AnnouncementBar = () => {
     <>
       <Link to='/pages/current-promotions'>
         <div
-          className="news-alert d-flex flex-column justify-content-center align-items-center "
+          className="news-alert d-flex flex-column justify-content-center align-items-center"
           role="alert"
         >
           <strong className="mt-4 text-secondary text-center fw-bold">

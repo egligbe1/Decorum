@@ -9,7 +9,7 @@ import NewsletterModal from "./components/Modals/NewsletterModal";
 import Sidebar from "./components/Sidebar/Sidebar";
 import PromotionsPage from "./pages/PromotionsPage/PromotionsPage";
 import CartSidebar from "./components/CartSidebar/CartSidebar";
-
+import InteriorDesignServices from "./pages/InteriorDesignServices/InteriorDesignServices";
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
@@ -37,17 +37,30 @@ function App() {
 
   return (
     <Router>
-      {showCartSidebar && <CartSidebar openCartSidebar= {openCartSidebar} closeCartSidebar = {closeCartSidebar}/>}
-      {showSidebar && <Sidebar openSidebar={openSidebar} closeSidebar = {closeSidebar}/>}
+      {showCartSidebar && (
+        <CartSidebar
+          openCartSidebar={openCartSidebar}
+          closeCartSidebar={closeCartSidebar}
+        />
+      )}
+      {showSidebar && (
+        <Sidebar openSidebar={openSidebar} closeSidebar={closeSidebar} />
+      )}
       {showModal && (
         <NewsletterModal openModal={openModal} closeModal={closeModal} />
       )}
-      <Nav openModal={openModal} openSidebar={openSidebar} openCartSidebar={openCartSidebar} closeCartSidebar={closeCartSidebar}/>
+      <Nav
+        openModal={openModal}
+        openSidebar={openSidebar}
+        openCartSidebar={openCartSidebar}
+        closeCartSidebar={closeCartSidebar}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/pages/current-promotions" element={<PromotionsPage />} />
         <Route path="/*" element={<NotFoundPage />} />
+        <Route path="/pages/interior-design-services" element={<InteriorDesignServices />} />
       </Routes>
     </Router>
   );
