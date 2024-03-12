@@ -1,4 +1,4 @@
-# Decorium; A Home Furniture Store Project
+# Decorium; A Home Furniture Store
 
 This is a clone of the Canadian Furniture store 'Decorium.com' website
 
