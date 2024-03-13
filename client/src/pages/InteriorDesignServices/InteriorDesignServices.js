@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./InteriorDesignServices.css";
 import AnnouncementBar from "../../components/AnnouncementBar/AnnouncementBar";
 import Footer from "../../components/Footer/Footer";
@@ -8,6 +8,28 @@ import Step2 from "../../assets/images/step2.webp";
 import Step3 from "../../assets/images/step3.webp";
 
 const InteriorDesignServices = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+    rooms: "",
+    timeframe: "",
+    budget: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Write submit logic later
+
+    console.log(formData);
+  };
+
   return (
     <>
       <div className="container">
@@ -97,6 +119,109 @@ const InteriorDesignServices = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="book-appointment">
+          <h2 className="mt-5 mb-3 app-head">
+            REQUEST YOUR FREE APPOINTMENT
+          </h2>
+          <div className="appointment-form">
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                <label htmlFor="nameInput" className="form-label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="FormInput"
+                  id="nameInput"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="emailInput" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="FormInput"
+                  id="emailInput"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="phoneInput" className="form-label">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  className="FormInput"
+                  id="phoneInput"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="addressInput" className="form-label">
+                  Address
+                </label>
+                <input
+                  type="text"
+                  className="FormInput"
+                  id="addressInput"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="roomsInput" className="form-label">
+                  Rooms(s) you wish to transform
+                </label>
+                <input
+                  type="text"
+                  className="FormInput"
+                  id="roomsInput"
+                  name="rooms"
+                  value={formData.rooms}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="timeframeInput" className="form-label">
+                  Timeframe for completion of the project.
+                </label>
+                <input
+                  type="text"
+                  className="FormInput"
+                  id="timeframeInput"
+                  name="timeframe"
+                  value={formData.timeframe}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="budgetInput" className="form-label">
+                  Approx. budget for project
+                </label>
+                <input
+                  type="text"
+                  className="FormInput"
+                  id="budgetInput"
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <button type="submit" className="bn1 bg-dark text-light py-2 px-4 text-center">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
         <Footer />

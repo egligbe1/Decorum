@@ -106,12 +106,14 @@ const ProductCategoryCarousel = () => {
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to='/collections/accent-chairs'><img
-                style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                src={accents}
-                alt="accents"
-                className="product-img d-block w-100"
-              /></Link>
+              <Link to="/collections/accent-chairs">
+                <img
+                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
+                  src={accents}
+                  alt="accents"
+                  className="product-img d-block w-100"
+                />
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>
