@@ -53,6 +53,14 @@
   width: 100%;
   font-size: 15px;
 }
+.cardImg img {
+  object-fit: cover;
+  height: 450px;
+}
+.cardTitle h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
 
 @media (max-width: 767px) {
   .app-head {

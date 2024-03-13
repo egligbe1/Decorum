@@ -54,3 +54,54 @@
   padding: 5px;
   width: 100%;
 }
+
+/* CSS for Room Planner */
+.planner-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.planner-main {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #ccc; /* Example border */
+  box-shadow: 0 0 5px rgba(138, 134, 134, 0.3);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 101;
+  padding: 30px;
+}
+.planner-form {
+  border: 3px solid rgb(224, 224, 224);
+  padding: 30px;
+  margin: 25px 0;
+}
+.planner-form-group {
+  margin: 0 10px;
+}
+.planner-input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 5px;
+}
+.check-label {
+  font-size: 14px;
+}
+.btn3 {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn3 {
+    font-size: 12px;
+  }
+}

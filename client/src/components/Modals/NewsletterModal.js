@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./NewsletterModal.css";
+import "./Modals.css";
 import { AiOutlineMail } from "react-icons/ai";
 
 const NewsletterModal = ({ closeModal }) => {

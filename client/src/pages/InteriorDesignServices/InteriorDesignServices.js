@@ -6,8 +6,12 @@ import Furniture from "../../assets/images/space.jpg";
 import Step1 from "../../assets/images/step1.webp";
 import Step2 from "../../assets/images/step2.webp";
 import Step3 from "../../assets/images/step3.webp";
+import inspoImg from "../../assets/images/find_inspo.webp";
+import streslessImg from "../../assets/images/find-stressless.webp";
+import roomPlannerImg from "../../assets/images/find_room_planner.webp";
+import StresslessLogo from "../../assets/images/Stressless.avif";
 
-const InteriorDesignServices = () => {
+const InteriorDesignServices = ({ openRoomPlanner, closeRoomPlanner }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -121,10 +125,8 @@ const InteriorDesignServices = () => {
             </div>
           </div>
         </div>
-        <div className="book-appointment">
-          <h2 className="mt-5 mb-3 app-head">
-            REQUEST YOUR FREE APPOINTMENT
-          </h2>
+        <div className="book-appointment mb-5">
+          <h2 className="mt-5 mb-3 app-head">REQUEST YOUR FREE APPOINTMENT</h2>
           <div className="appointment-form">
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
@@ -218,10 +220,82 @@ const InteriorDesignServices = () => {
                   onChange={handleInputChange}
                 />
               </div>
-              <button type="submit" className="bn1 bg-dark text-light py-2 px-4 text-center">
+              <button
+                type="submit"
+                className="bn1 bg-dark text-light py-2 px-4 text-center"
+              >
                 Submit
               </button>
             </form>
+          </div>
+        </div>{" "}
+        <div className="row">
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="card">
+              <div className="cardImg">
+                <img src={inspoImg} className="card-img-top" alt="" />
+              </div>
+              <div className="card-body">
+                <div className="cardTitle">
+                  <h2>Find your inspiration</h2>
+                </div>
+                <div className="card-text">
+                  <p>
+                    Our talented team of design experts discuss emerging trends
+                    in interior design so you can stay in the know.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="card">
+              <div className="cardImg">
+                <img src={streslessImg} className="card-img-top" alt="" />
+              </div>
+              <div className="card-body">
+                <div className="cardTitle">
+                  <h2>
+                    Discover{" "}
+                    <span>
+                      <img
+                        src={StresslessLogo}
+                        alt="Stressless"
+                        style={{ width: "55px" }}
+                      />
+                    </span>
+                  </h2>
+                </div>
+                <div className="card-text">
+                  <p>
+                    We are proud to be one of Canada's leading Stressless
+                    providers. The moment you sit down, you can feel the
+                    difference.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12 mb-4">
+            <div className="card">
+              <div className="cardImg">
+                <img src={roomPlannerImg} className="card-img-top" alt="" />
+              </div>
+              <div className="card-body">
+                <div className="cardTitle">
+                  <h2>Room Planner</h2>
+                </div>
+                <div className="card-text">
+                  <p>Please try our free interactive room planner.</p>
+                  <button
+                    className="btn btn-dark text-light text-center py-2 px-3"
+                    onClick={openRoomPlanner}
+                  >
+                    Launch Room Planner
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
