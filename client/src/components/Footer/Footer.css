@@ -13,3 +13,6 @@ a {
 .copyright {
     font-size: 16px;
 }
+.card-body p {
+    font-size: 14px;
+}
