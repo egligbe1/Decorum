@@ -5,6 +5,7 @@ import diningtable from "../../../assets/images/dining-tables.webp";
 import diningchair from "../../../assets/images/dining-chair.webp";
 import cabinets from "../../../assets/images/dining-cabinets.webp";
 import bar from "../../../assets/images/dining-bar.webp";
+import Footer from "../../../components/Footer/Footer";
 
 const DiningCollections = () => {
   return (
@@ -84,6 +85,7 @@ const DiningCollections = () => {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
     </>
   );

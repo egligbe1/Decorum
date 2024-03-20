@@ -1,5 +1,6 @@
 import React from "react";
 import AnnouncementBar from "../../../components/AnnouncementBar/AnnouncementBar";
+import Footer from "../../../components/Footer/Footer";
 
 const BedroomCollections = () => {
   return (
@@ -9,6 +10,7 @@ const BedroomCollections = () => {
         <div className="title">
             <h1>Beds</h1>
         </div>
+        <Footer />
       </div>
     </>
   );

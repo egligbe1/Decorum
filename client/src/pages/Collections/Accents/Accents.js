@@ -1,17 +1,19 @@
-import React from 'react'
-import AnnouncementBar from '../../../components/AnnouncementBar/AnnouncementBar'
+import React from "react";
+import AnnouncementBar from "../../../components/AnnouncementBar/AnnouncementBar";
+import Footer from "../../../components/Footer/Footer";
 
 const Accents = () => {
   return (
     <>
-    <AnnouncementBar />
-    <div className="container">
+      <AnnouncementBar />
+      <div className="container">
         <div className="browse-collections my-3">
-            <h1>Accent Chairs</h1>
+          <h1>Accent Chairs</h1>
         </div>
-    </div>
+        <Footer />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Accents
+export default Accents;

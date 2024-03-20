@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import stressless from "../../../assets/images/Stressless.avif";
+import Footer from "../../../components/Footer/Footer";
 
 const StresslessGallery = () => {
   return (
@@ -33,6 +34,7 @@ const StresslessGallery = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
