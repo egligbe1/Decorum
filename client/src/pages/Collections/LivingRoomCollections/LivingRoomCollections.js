@@ -26,7 +26,7 @@ const LivingRoomCollections = () => {
           <div className="row">
             <div className="col-md-6 mb-2 collection-item">
               <div className="card h-100">
-                <Link to="/collections/sofa">
+                <Link to="/collections/sofas">
                   <div className="collection-image">
                     <img
                       src={LivingSofa}

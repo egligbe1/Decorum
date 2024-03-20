@@ -28,6 +28,9 @@ import StresslessGallery from "./pages/Collections/LivingRoomCollections/Stressl
 import BookShelves from "./pages/Collections/LivingRoomCollections/Bookshelves";
 import ConsoleTables from "./pages/Collections/LivingRoomCollections/ConsoleTables";
 import BenchesOttomans from "./pages/Collections/LivingRoomCollections/BenchesOttomans";
+import BedroomCollections from "./pages/Collections/BedroomCollections/BedroomCollections";
+import DiningCollections from "./pages/Collections/DiningCollections/DiningCollections";
+import Accents from "./pages/Collections/Accents/Accents";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -104,8 +107,8 @@ function App() {
         <Route
           path="/collections/living-room"
           element={<LivingRoomCollections />}
-        ></Route>
-        <Route path="/collections/sofa" element={<LivingSofas />} />
+        />
+        <Route path="/collections/sofas" element={<LivingSofas />} />
         <Route
           path="/collections/sectionals-large-living"
           element={<Sectionals />}
@@ -133,6 +136,12 @@ function App() {
           path="/collections/benches-ottomans"
           element={<BenchesOttomans />}
         />
+        <Route
+          path="/collections/beds"
+          element={<BedroomCollections />}
+        />
+        <Route path="/collections/dining" element={<DiningCollections />}/>
+        <Route path="/collections/accent-chairs" element={<Accents/>} />
       </Routes>
     </Router>
   );
