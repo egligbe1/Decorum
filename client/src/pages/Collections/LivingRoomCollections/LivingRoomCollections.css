@@ -1,0 +1,9 @@
+.collection-image img {
+    object-fit: cover;
+    height: 400px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.card-text {
+    font-size: 20px;
+}
