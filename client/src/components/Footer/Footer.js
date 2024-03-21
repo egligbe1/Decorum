@@ -24,7 +24,7 @@ const Footer = () => {
     setExpanded((prevExpanded) => !prevExpanded);
   };
   return (
-    <footer className="footer-wrapper">
+    <footer className="footer-wrapper mt-5">
       <div className="container">
         <hr />
         <div className="socials d-flex">
@@ -303,38 +303,43 @@ const Footer = () => {
           </div>
           <div className="payment-gateways">
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/color/32/amex.png"
               alt="amex"
+              className="me-2"
             />
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/color/32/apple-pay.png"
               alt="apple-pay"
+              className="me-2"
             />
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/fluency/32/diners-club.png"
               alt="diners-club"
+              className="me-2"
             />
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/color/32/discover.png"
               alt="discover"
+              className="me-2"
             />
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/color/32/mastercard-logo.png"
               alt="mastercard-logo"
+              className="me-2"
             />
             <img
-              width="32"
-              height="32"
+              width="33"
+              height="33"
               src="https://img.icons8.com/color-glass/32/visa.png"
               alt="visa"
             />

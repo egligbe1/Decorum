@@ -36,7 +36,7 @@ const LivingRoomCollections = () => {
                   </div>
 
                   <div className="card-body">
-                    <h3 className="card-text">Living Sofa</h3>
+                    <h2 className="card-text">Living Sofa</h2>
                   </div>
                 </Link>
               </div>
@@ -53,7 +53,7 @@ const LivingRoomCollections = () => {
                     />
                   </div>
                   <div className="card-body">
-                    <h3 className="card-text">Sectionals</h3>
+                    <h2 className="card-text">Sectionals</h2>
                   </div>
                 </Link>
               </div>
@@ -68,7 +68,7 @@ const LivingRoomCollections = () => {
                   <img src={sofabeds} className="card-img" alt="sofa beds" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Sofa Beds</h3>
+                  <h2 className="card-text">Sofa Beds</h2>
                 </div>
               </Link>
             </div>
@@ -80,7 +80,7 @@ const LivingRoomCollections = () => {
                   <img src={recliner} className="card-img" alt="recliner" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Recliner</h3>
+                  <h2 className="card-text">Recliners</h2>
                 </div>
               </Link>
             </div>
@@ -98,7 +98,7 @@ const LivingRoomCollections = () => {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Media Stands</h3>
+                  <h2 className="card-text">Media Stands</h2>
                 </div>
               </Link>
             </div>
@@ -114,7 +114,7 @@ const LivingRoomCollections = () => {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Coffee Tables</h3>
+                  <h2 className="card-text">Coffee Tables</h2>
                 </div>
               </Link>
             </div>
@@ -128,7 +128,7 @@ const LivingRoomCollections = () => {
                   <img src={stressless} className="card-img" alt="stressless" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Stressless</h3>
+                  <h2 className="card-text">Stressless</h2>
                 </div>
               </Link>
             </div>
@@ -144,7 +144,7 @@ const LivingRoomCollections = () => {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Bookshelves</h3>
+                  <h2 className="card-text">Bookshelves</h2>
                 </div>
               </Link>
             </div>
@@ -162,7 +162,7 @@ const LivingRoomCollections = () => {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Console Tables</h3>
+                  <h2 className="card-text">Console Tables</h2>
                 </div>
               </Link>
             </div>
@@ -174,7 +174,7 @@ const LivingRoomCollections = () => {
                   <img src={ottomans} className="card-img" alt="ottomans" />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-text">Benches & Ottomans</h3>
+                  <h2 className="card-text">Benches & Ottomans</h2>
                 </div>
               </Link>
             </div>
