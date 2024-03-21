@@ -27,12 +27,12 @@ const MiniNav = () => {
                 </NavLink>
               </li>
               <li className="me-3">
-                <NavLink to="/about" className="text-white">
+                <NavLink to="/contact-us" className="text-white">
                   Contact Us
                 </NavLink>
               </li>
               <li className="me-3">
-                <NavLink to="/about" className="text-white">
+                <NavLink to="/track" className="text-white">
                   Track Your Delivery
                 </NavLink>
               </li>
