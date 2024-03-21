@@ -66,53 +66,88 @@ const ProductCategoryCarousel = () => {
           >
             <SwiperSlide>
               <Link to="collections/living-room">
-                <img
-                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                  src={livingroom}
-                  alt="modern-luxury-bedroom-freepik"
-                  className="product-img d-block w-100"
-                />
+                <div className="link-wrap">
+                  <img
+                    style={{
+                      height: "40vh",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                    src={livingroom}
+                    alt="modern-luxury-bedroom-freepik"
+                    className="product-img d-block w-100"
+                  />
+                  <h2>Living Room</h2>
+                </div>
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/collections/bed">
-                <img
-                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                  src={bedroom}
-                  alt="modern-luxury-bedroom-freepik"
-                  className="product-img d-block w-100"
-                />
+                <div className="link-wrap">
+                  <img
+                    style={{
+                      height: "40vh",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                    src={bedroom}
+                    alt="modern-luxury-bedroom-freepik"
+                    className="product-img d-block w-100"
+                  />{" "}
+                  <h2>Bedroom</h2>
+                </div>
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/collections/stressless-gallery">
-                <img
-                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                  src={stressless}
-                  alt="stressless"
-                  className="product-img d-block w-100"
-                />
+                <div className="link-wrap">
+                  <img
+                    style={{
+                      height: "40vh",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                    src={stressless}
+                    alt="stressless"
+                    className="product-img d-block w-100"
+                  />{" "}
+                  <h2>Stressless</h2>
+                </div>
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/collections/dining">
                 {" "}
-                <img
-                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                  src={dining}
-                  alt="dining"
-                  className="product-img d-block w-100"
-                />
+                <div className="link-wrap">
+                  <img
+                    style={{
+                      height: "40vh",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                    src={dining}
+                    alt="dining"
+                    className="product-img d-block w-100"
+                  />{" "}
+                  <h2>Dining</h2>
+                </div>
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/collections/accent-chairs">
-                <img
-                  style={{ height: "40vh", width: "100%", objectFit: "cover" }}
-                  src={accents}
-                  alt="accents"
-                  className="product-img d-block w-100"
-                />
+                <div className="link-wrap">
+                  <img
+                    style={{
+                      height: "40vh",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                    src={accents}
+                    alt="accents"
+                    className="product-img d-block w-100"
+                  />{" "}
+                  <h2>Accents</h2>
+                </div>
               </Link>
             </SwiperSlide>
           </Swiper>

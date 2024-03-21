@@ -29,7 +29,7 @@ const Sidebar = ({ closeSidebar }) => {
       <li key={index} className="d-flex flex-row justify-content-between">
         {index !== 0  && index !== 8 && index !== 9? (
           <>
-            <Link to={item.link}>{item.label}</Link>
+            <Link onClick={closeSidebar} to={item.link}>{item.label}</Link>
             <Link className="ms-5">
               <span className="me-3 text-secondary pipe">|</span>
               <span className="me-4">
