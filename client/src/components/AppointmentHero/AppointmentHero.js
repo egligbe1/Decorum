@@ -7,7 +7,7 @@ const AppointmentHero = () => {
   return (
     <div className="container">
       <div className="image-wrap">
-        <video src={room_video} autoPlay width='100%' muted loop/>
+        <video src={room_video} autoPlay width='100%' muted loop controls={false}/>
         <div className="cta-wrap text-center">
           <h4 style={{ fontSize: "15px" }}>Take advantage of our</h4>
           <p className="call fw-bold">FREE INTERIOR DESIGN SERVICES </p>

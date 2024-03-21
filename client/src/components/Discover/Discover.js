@@ -13,7 +13,7 @@ const Discover = () => {
       <div className="row">
         <div className="col-md-4 mb-4">
           <div className="card blog d-flex flex-column h-100">
-\            <Link to="/blogs/blog">
+            <Link to="/blogs/blog">
               <img
                 src={inspiration}
                 alt=""
