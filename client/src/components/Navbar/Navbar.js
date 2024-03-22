@@ -25,6 +25,7 @@ const Navbar = ({ openModal, openSidebar, openCartSidebar }) => {
               onClick={openSidebar}
               className="menu-icon ms-3 text-secondary d-lg-none"
               id="menu-toggle"
+              style={{cursor: "pointer"}}
             >
               <IoMenu size={30} />{" "}
             </div>

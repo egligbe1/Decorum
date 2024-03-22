@@ -45,14 +45,14 @@ const Sidebar = ({ closeSidebar }) => {
   };
 
   return (
-    <div className="sidebar-overlay" onClick={closeSidebar}>
+    <div className="sidebar-overlay" onClick={closeSidebar}><button className="close-button" onClick={closeSidebar}>
+          <IoMdClose />
+        </button>
       <div
         className="sidebar d-flex flex-column"
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="close-button" onClick={closeSidebar}>
-          <IoMdClose />
-        </button>
+        
         <ul className="sidebar-menu-items flex-column">{renderMenuItems()}</ul>
       </div>
     </div>
