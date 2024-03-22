@@ -4,7 +4,7 @@ import "./LivingRoomCollections.css";
 import AnnouncementBar from "../../../components/AnnouncementBar/AnnouncementBar";
 import LivingSofa from "../../../assets/images/living-sofa.webp";
 import Sectionals from "../../../assets/images/living-sectionals.webp";
-import sofabeds from "../../../assets/images/living-sofa-beds.jpg";
+import sofabeds from "../../../assets/images/living-sofa-beds.webp";
 import recliner from "../../../assets/images/living-recliner.webp";
 import stressless from "../../../assets/images/living-stressless.webp";
 import bookshelves from "../../../assets/images/living-bookshelves.webp";
